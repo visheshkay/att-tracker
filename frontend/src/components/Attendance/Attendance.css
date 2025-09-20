@@ -1,0 +1,26 @@
+.attendance-page {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attendance-card {
+  text-align: center;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.attendance-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.gauge-wrap {
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+}

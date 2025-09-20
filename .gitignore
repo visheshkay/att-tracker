@@ -1,0 +1,4 @@
+./backend/storage
+./frontend/node_modules
+node_modules
+storage

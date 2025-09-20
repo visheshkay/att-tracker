@@ -1,0 +1,71 @@
+### 🧑‍🎓 Register Student
+POST http://127.0.0.1:8000/students/register
+Content-Type: application/json
+
+{
+    "roll": "22071A0500",
+  "name": "Alice",
+  "email": "alice1@example.com",
+  "password": "password123"
+}
+
+### 🧑‍🎓 Upload Student Photo (replace {student_id} with real ID returned above)
+POST http://127.0.0.1:8000/students/22071A0500/upload_photo
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="alice1.jpg"
+Content-Type: image/jpeg
+
+< ./samples/alice1.jpg
+--boundary--
+
+### 👨‍🏫 Register Teacher
+POST http://127.0.0.1:8000/teachers/register
+Content-Type: application/json
+
+{
+  "id": "22CS1008",
+  "name": "Mr. John",
+  "email": "john81@example.com",
+  "password": "teachpass"
+}
+
+### 👨‍🏫 Upload Class Photo (attendance marking)
+POST http://127.0.0.1:8000/teachers/upload_class_photo
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="file"; filename="class.jpg"
+Content-Type: image/jpeg
+
+< ./samples/class.jpg
+--boundary--
+
+### 🧑‍🎓 (Optional) Student Login
+POST http://127.0.0.1:8000/students/login
+Content-Type: application/json
+
+{
+  "roll": "22071A0500",
+  "password": "password123"
+}
+
+### 👨‍🏫 (Optional) Teacher Login
+POST http://127.0.0.1:8000/teachers/login
+Content-Type: application/json
+
+{
+  "id": "22CS1008",
+  "password": "teachpass"
+}
+
+### 🧑‍🎓 Get Student Attendance Records (replace with real student_id)
+GET http://127.0.0.1:8000/students/22071A0500/attendance
+
+### 👨‍🏫 Get Full Class Attendance (for today)
+GET http://127.0.0.1:8000/teachers/attendance/all
+### 👨‍🏫 Get Attendance for Specific Date
+GET http://127.0.0.1:8000/teachers/files/2025-09-21
+###
+GET http://127.0.0.1:8000/students/22071A0550/photo

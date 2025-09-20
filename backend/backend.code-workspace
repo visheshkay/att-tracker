@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "backend",
+			"path": "."
+		},
+		{
+			"name": "student-faces-1",
+			"path": "../../../Downloads/student-faces-1"
+		}
+	],
+	"settings": {}
+}
