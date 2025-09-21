@@ -1,4 +1,6 @@
-# 🎯 Smart Attendance Tracker using Face Recognition
+# NE01_LIMIT-BREAKERS
+
+# 🎯 AutoMark: Intelligent Attendance Tracker
 
 This project is a **Face Recognition–based Student Attendance System** built for **Neurax Hackathon** 🏆.  
 It automates student attendance by detecting and recognizing faces from class photos, eliminating manual roll calls.  
