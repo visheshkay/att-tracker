@@ -10,37 +10,36 @@ Attendance data is stored in **MongoDB**, with annotated class photos and per-st
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+```bash
 att-tracker/
 ├── backend/
-│ ├── main.py # FastAPI entrypoint
-│ ├── database.py # MongoDB connection
-│ ├── face_service.py # Face detection & embedding logic
-│ ├── routers/
-│ │ ├── students.py # Student registration, login, upload face
-│ │ ├── teachers.py # Teacher login, upload class photo, reports
-│ ├── storage.py # File storage utilities
-│ ├── storage/
-│ │ ├── students/ # Each student folder with face.jpg
-│ │ │ ├── 22071A0549/
-│ │ │ │ └── face.jpg
-│ │ │ ├── 22071A0550/
-│ │ │ │ └── face.jpg
-│ │ ├── class_photos/ # Uploaded classroom images
-│ │ └── output/ # Annotated class photos
-│ └── requirements.txt # Backend dependencies
+│   ├── main.py                # FastAPI entrypoint
+│   ├── database.py            # MongoDB connection
+│   ├── face_service.py        # Face detection & embedding logic
+│   ├── routers/
+│   │   ├── students.py        # Student registration, login, upload face
+│   │   ├── teachers.py        # Teacher login, upload class photo, reports
+│   ├── storage.py             # File storage utilities
+│   ├── storage/
+│   │   ├── students/          # Each student folder with face.jpg
+│   │   │   ├── 22071A0549/
+│   │   │   │   └── face.jpg
+│   │   │   ├── 22071A0550/
+│   │   │   │   └── face.jpg
+│   │   ├── class_photos/      # Uploaded classroom images
+│   │   └── output/            # Annotated class photos
+│   └── requirements.txt       # Backend dependencies
 │
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── UploadImage.js
-│ │ │ ├── UploadAttendance.js
-│ │ │ ├── TotalAttendance.js
-│ │ │ └── CheckAttendance.js
-│ │ ├── redux/ # Redux slices & thunks
-│ │ └── App.js
-│ ├── package.json # CRA frontend config
+│   ├── src/
+│   │   ├── components/
+│   │   ├── redux/
+│   │   └── App.js
+│   ├── package.json
 │
-├── README.md # This file
+└── README.md
 
 
 ---
