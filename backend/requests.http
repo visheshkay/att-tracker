@@ -3,10 +3,10 @@ POST http://127.0.0.1:8000/students/register
 Content-Type: application/json
 
 {
-    "roll": "22071A0500",
-  "name": "Alice",
-  "email": "alice1@example.com",
-  "password": "password123"
+    "roll": "66D5",
+  "name": "Shaheid",
+  "email": "shaheid@example.com",
+  "password": "12345678"
 }
 
 ### 🧑‍🎓 Upload Student Photo (replace {student_id} with real ID returned above)
