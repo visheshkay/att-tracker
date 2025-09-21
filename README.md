@@ -8,7 +8,6 @@ Attendance data is stored in **MongoDB**, with annotated class photos and per-st
 
 ---
 
-## 📂 Project Structure
 
 ## 📂 Project Structure
 
